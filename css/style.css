@@ -36,6 +36,7 @@ body {
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
+  padding: 2%;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -327,6 +328,38 @@ a:focus {
   margin-bottom: 10 px;
   color: #0355cc;
 }
+.btn1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn1:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 .slider_section .detail-box p {
   color: #444;
@@ -537,6 +570,21 @@ a:focus {
   align-items: center;
 }
 
+#scrollButton {
+  padding: 12px 24px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#scrollButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
 .service_section .box .img-box {
   width: 65px;
   height: 65px;
@@ -581,7 +629,7 @@ a:focus {
           filter: brightness(0) invert(1);
 } */
 
-.service_section .btn-box {
+.service_section .btnService {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,6 +639,15 @@ a:focus {
   margin-top: 45px;
 }
 
+.about_section .btnAbout{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px;
+}
 .service_section .btn-box a {
   display: inline-block;
   font-family: 'Merriweather Sans', sans-serif;
@@ -694,6 +751,20 @@ a:focus {
   background-color: #fff;
 }
 
+.message-layout {
+  display: flex;
+  justify-content: space-between; /* Align message form and FAQ */
+  margin-top: 20px; /* Space above the message layout */
+}
+
+.message-section {
+  flex: 1; /* Allow message section to take full space */
+  margin-right: 20px; /* Space between message form and FAQ */
+  padding: 20px; /* Add padding for better spacing */
+  background: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+}
+
 .contact_section input {
   width: 100%;
   border: none;
@@ -702,7 +773,7 @@ a:focus {
   padding-left: 25px;
   background-color: #ffffff;
   outline: none;
-  color: #ffffff;
+  color: #000000;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }

@@ -17,20 +17,20 @@
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- font awesome style -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/StyleServices.Css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
-
 <body>
-    <div class="hero_area">
+    <header>
       <!-- header section strats -->
       <header class="header_section ">
         <div class="header_top">
@@ -39,7 +39,7 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call : +212622646630
+                  Appelez-nous : +212622646630
                 </span>
               </a>
               <a href="">
@@ -70,13 +70,13 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
+                    <a class="nav-link" href="about.html"> À Propos</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="service.html">Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="service.html">Nos Services <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="contact.html">Contactez Nous</a>
                   </li>
                 </ul>
               </div>
@@ -85,58 +85,91 @@
         </div>
       </header>
       <!-- end header section -->
+    
+    <main>
+        <section id="agenda" class="service-section">
+            <img src="images/Agendat.png" alt="Agenda En Ligne" class="service-image">
+            <h2><i class="fas fa-calendar-alt"></i> Agenda En Ligne</h2>
+            <p>Notre <strong>Agenda En Ligne</strong> vous permet de prendre, modifier et annuler des rendez-vous en quelques clics.</p>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3>Interface Conviviale</h3>
+                    <p>Naviguez facilement pour trouver le service et planifier votre rendez-vous.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Accès 24/7</h3>
+                    <p>Prenez rendez-vous à votre convenance, jour ou nuit.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Compatible Mobile</h3>
+                    <p>Planifiez vos rendez-vous en déplacement avec notre application mobile.</p>
+                </div>
+            </div>
+            <button class="toggle-btn" onclick="toggleDropdown('agenda-options')">Prenez votre rendez-vous</button>
+            <div id="agenda-options" class="dropdown-list">
+                <ul>
+                    <li><a href="#">Prendre un Rendez-vous</a></li>
+                    <li><a href="#">Modifier un Rendez-vous</a></li>
+                </ul>
+            </div>
+        </section>
 
-       <!-- service section -->
+        <section id="sante" class="service-section">
+            <img src="images/Sante.jpg" alt="Santé" class="service-image">
+            <h2><i class="fas fa-heartbeat"></i> Santé</h2>
+            <p>Votre santé est notre priorité. Nous offrons un large éventail de services médicaux adaptés à vos besoins.</p>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3>Soins Préventifs</h3>
+                    <p>Bilan de santé et dépistages réguliers pour une vie saine.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Diagnostics</h3>
+                    <p>Tests avancés pour un diagnostic précis de vos conditions médicales.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Soins Spécialisés</h3>
+                    <p>Accès à une gamme de spécialistes pour un traitement ciblé.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Gestion des Maladies Chroniques</h3>
+                    <p>Soutien pour des conditions comme le diabète avec des plans personnalisés.</p>
+                </div>
+            </div>
+        </section>
 
-  <section class="service_section layout_padding">
-    <div class="container ">
-  
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/specialiste-de-sante.png" alt="" />
+        <section id="nouveaux-clients" class="service-section">
+            <img src="images/Regi.jpg" alt="Nouveaux Clients" class="service-image">
+            <h2><i class="fas fa-users"></i> Nouveaux Clients ?</h2>
+            <p>Nous sommes ravis d'accueillir de nouveaux clients. Voici ce que nous proposons :</p>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3>Consultation Initiale</h3>
+                    <p>Évaluation complète de vos antécédents médicaux pour personnaliser vos soins.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Plans de Santé Personnalisés</h3>
+                    <p>Recommandations adaptées à votre mode de vie et besoins spécifiques.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Soutien Continu</h3>
+                    <p>Accompagnement à chaque étape de votre parcours de santé.</p>
+                </div>
             </div>
-            <div class="detail-box">
-              <h5>
-                Santé
-              </h5>
-              <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
-              </p>
+            <button class="toggle-btn" onclick="toggleDropdown('client-options')">Rejoignez-Nous</button>
+            <div id="client-options" class="dropdown-list">
+                <ul>
+                    <li><a href="#">S'inscrire en Ligne</a></li>
+                    <li><a href="#">Consulter un Médecin</a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 mx-auto">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/trouver-des-patients.png" alt="" />
-            </div>
-            <div class="detail-box">
-              <h5>
-                Nouveaux clients ?
-              </h5>
-              <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end service section -->
- <!-- info section -->
- <section class="info_section ">
+        </section>
+    </main>
+<!-- info section -->
+<section class="info_section ">
     <div class="container">
       <h4>
-        Get In Touch
+        Restez en Contact
       </h4>
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -149,7 +182,7 @@
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem Ipsum is simply dummy text
+                      Centre Médical DocSelect
                     </p>
                   </div>
                 </a>
@@ -161,7 +194,7 @@
                       <i class="fa fa-phone" aria-hidden="true"></i>
                     </div>
                     <p>
-                      +212 62 26 46 630
+                      +212 52 26 46 630
                     </p>
                   </div>
                 </a>
@@ -185,7 +218,7 @@
     </div>
     <div class="social-box">
       <h4>
-        Follow Us
+        Suivez-nous
       </h4>
       <div class="box">
         <a href="">
@@ -212,7 +245,7 @@
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayDateYear"></span> All Rights Reserved By <a href="#">JSON BOND Class</a>
+        &copy; <span id="displayDateYear"></span> All Rights Reserved By <a href="#">Lorenz Cipher Class</a>
       </p>
     </div>
   </footer>
@@ -231,4 +264,8 @@
 
 </body>
 
+</html>
+    
+    <script src="js/Service.js"></script>
+</body>
 </html>
